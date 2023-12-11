@@ -2,9 +2,9 @@
 
 @section('content')
     
-<section>
-    <div class="container">
-        <h1>hello worlddd</h1>
-    </div>
+<section class="hero">
+        <div>
+            <img class="hero-img" src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt="">
+        </div>
 </section>
 @endsection
