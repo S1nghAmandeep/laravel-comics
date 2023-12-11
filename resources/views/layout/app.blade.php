@@ -16,6 +16,12 @@
 
     @include('partials.header')
     <main>
+            {{-- inizio sezione hero --}}
+    <section class="hero">
+            <div>
+                <img class="hero-img" src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt="">
+            </div>
+    </section>
         @yield('content')
     </main>
 
