@@ -5,8 +5,11 @@
 {{-- inizio sezione comic --}}
 <section class="section-comics">
     <div class="container">
+        <div>
+            <h4 class="tag-series">Current series</h4>
+        </div>
         <div class="d-flex flex-column align-items-center">
-            <div class="row">
+            <div class="row row-gap-5">
                 @foreach ($comics as $item)
                 <div class="col-2">
                     <img class="thumb" src="{{$item['thumb']}}" alt="">
@@ -14,7 +17,7 @@
                 </div>
                 @endforeach
             </div>
-            <button class="btn btn-primary">Load more</button>
+            <button class="btn btn-primary mt-4 text-uppercase">Load more</button>
         </div>
     </div>
     <div class="detail pt-5">
